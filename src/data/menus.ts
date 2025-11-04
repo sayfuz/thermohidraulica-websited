@@ -8,24 +8,32 @@ export const menuMain: MainMenuItem[] = [
   },
   {
     id: "about",
-    label: "About",
-    url: "/about-us",
+    label: "Nosotros",
+    url: "/nosotros",
     submenu: [
       {
         id: "testimonials",
         label: "Testimonials",
-        url: "/about-us/testimonials",
+        url: "/nosotros/testimonials",
       },
     ],
   },
   {
     id: "services",
-    label: "Services",
-    url: "/services",
+    label: "Servicios",
+    url: "/servicios",
     submenu: [
-      { id: "repairs", label: "Repairs", url: "/services/repairs" },
-      { id: "maintenance", label: "Maintenance", url: "/services/maintenance" },
-      { id: "car-sales", label: "Car Sales", url: "/services/car-sales" },
+      { id: "repairs", label: "Reparaciones", url: "/servicios/repairs" },
+      {
+        id: "maintenance",
+        label: "Mantenimiento",
+        url: "/servicios/maintenance",
+      },
+      {
+        id: "car-sales",
+        label: "Ventas de Autos",
+        url: "/servicios/car-sales",
+      },
     ],
   },
 ];
@@ -38,12 +46,12 @@ export const menuNavigation: MenuNavigation = {
       url: "/",
     },
     {
-      name: "About Us",
-      url: "/about-us",
+      name: "Nosotros",
+      url: "/nosotros",
     },
     {
-      name: "Services",
-      url: "/services",
+      name: "Servicios",
+      url: "/servicios",
     },
   ],
 };
@@ -56,12 +64,12 @@ export const menuService: MenuNavigation = {
       url: "/",
     },
     {
-      name: "About Us",
-      url: "/about-us",
+      name: "Nosotros",
+      url: "/nosotros",
     },
     {
-      name: "Services",
-      url: "/services",
+      name: "Servicios",
+      url: "/servicios",
     },
   ],
 };
@@ -74,12 +82,12 @@ export const menuMisc: MenuNavigation = {
       url: "/",
     },
     {
-      name: "About Us",
-      url: "/about-us",
+      name: "Nosotros",
+      url: "/nosotros",
     },
     {
-      name: "Services",
-      url: "/services",
+      name: "Servicios",
+      url: "/servicios",
     },
   ],
 };
@@ -92,12 +100,12 @@ export const menuLegal: MenuNavigation = {
       url: "/",
     },
     {
-      name: "About Us",
-      url: "/about-us",
+      name: "Nosotros",
+      url: "/nosotros",
     },
     {
-      name: "Services",
-      url: "/services",
+      name: "Servicios",
+      url: "/servicios",
     },
   ],
 };

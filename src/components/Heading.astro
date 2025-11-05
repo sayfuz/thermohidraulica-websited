@@ -2,7 +2,7 @@
 import type { ClassNameProps as Props } from "~/types";
 
 const { class: className } = Astro.props;
-const wrapperClasses = `max-w-3xl prose ${className}`;
+const wrapperClasses = `max-w-[100%] prose ${className}`;
 ---
 
 <div class={wrapperClasses}>

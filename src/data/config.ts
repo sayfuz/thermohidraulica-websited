@@ -11,43 +11,47 @@ export const defaultPaginationSize = 12;
 export const priceSteps = [50000, 100000, 150000, 200000, 250000, 300000];
 
 export const phone = {
-  href: "tel:+123456789",
-  label: "(123) 456-789",
+  href: "tel:+573052956414",
+  label: "(+57) 305 295 6414",
 };
 
 export const email = {
-  href: "mailto:info@hyperdrive.com",
-  label: "info@hyperdrive.com",
+  href: "mailto:cotizaciones@thermohidraulica.com",
+  label: "cotizaciones@thermohidraulica.com",
 };
 
+export const whatsapp = {
+  href: "https://wa.me/573052956414?text=¡Hola!%20Estoy%20interesado%20en%20conocer%20más%20sobre%20sus%20servicios%20de%20climatización%20y%20mantenimiento%20HVAC.%20¿Podrían%20brindarme%20más%20información?",
+  label: "(+57) 305 295 6414",
+};
 export const address = {
   street: "1234 Space Street",
-  city: "Galaxy City",
+  city: "Itagüí",
   zip: "12345",
-  state: "Milky Way",
-  country: "Space",
+  state: "Antioquia",
+  country: "Colombia",
 };
 
 export const socialMedia = {
-  facebook: {
-    url: "https://facebook.com",
-    label: "Facebook",
-    icon: "facebook",
+  whatsapp: {
+    url: "https://wa.me/573052956414?text=¡Hola!%20Estoy%20interesado%20en%20conocer%20más%20sobre%20sus%20servicios%20de%20climatización%20y%20mantenimiento%20HVAC.%20¿Podrían%20brindarme%20más%20información?",
+    label: "whatsapp",
+    icon: "whatsapp",
   },
-  x: {
-    url: "https://x.com",
-    label: "X",
-    icon: "x",
-  },
-  instagram: {
-    url: "https://instagram.com",
-    label: "Instagram",
-    icon: "instagram",
+  linkedin: {
+    url: "https://linkedin.com",
+    label: "LinkedIn",
+    icon: "linkedin",
   },
   youtube: {
     url: "https://youtube.com",
     label: "YouTube",
     icon: "youtube",
+  },
+  instagram: {
+    url: "https://instagram.com",
+    label: "Instagram",
+    icon: "instagram",
   },
 };
 

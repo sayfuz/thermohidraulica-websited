@@ -10,13 +10,6 @@ export const menuMain: MainMenuItem[] = [
     id: "about",
     label: "Nosotros",
     url: "/nosotros",
-    submenu: [
-      {
-        id: "testimonials",
-        label: "Testimonials",
-        url: "/nosotros/testimonials",
-      },
-    ],
   },
   {
     id: "services",

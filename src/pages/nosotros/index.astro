@@ -4,45 +4,90 @@ import Section from "~/components/Section.astro";
 import Container from "~/components/Container.astro";
 import Heading from "~/components/Heading.astro";
 import Team from "~/components/Team.astro";
+import Hero from "~/components/Hero.astro";
+import { Image } from "astro:assets";
+import Button from "~/components/Button.astro";
+import SliderTestimonial from "~/components/SliderTestimonial.astro";
+
+// Images
+import quienesSomosImg from "~/assets/images/quienes-somos.jpg";
 ---
 
-<Layout pageTitle="About Us" title="About Us">
-	<Section class:list={"bg-gray-50"}>
-		<Container>
-			<Heading>
-				<h1 slot="heading-title">About Us</h1>
-				<p slot="heading-content">
-					Welcome to HyperDrive! We are passionate about luxury cars and dedicated to providing the best
-					service to our customers. Our team of experts is here to help you find the perfect car that suits
-					your needs and preferences.
-				</p>
-			</Heading>
-		</Container>
-	</Section>
+<Layout pageTitle="Thermohidráulica | Quiénes Somos?" title="Quienes Somos">
+  <Section>
+    <Container>
+      <Hero>
+        <div slot="hero-left" class="prose lg:max-w-2xl">
+          <h1>Quiénes Somos</h1>
+          <p>
+            En <strong>Thermohidráulica</strong> somos especialistas en el
+            <strong
+              >diseño, instalación y mantenimiento preventivo y correctivo de
+              sistemas HVAC</strong
+            >. Ofrecemos soluciones integrales en <strong
+              >climatización, ventilación y sistemas de agua helada</strong
+            >, tanto para <strong>confort ambiental</strong> como para <strong
+              >procesos industriales</strong
+            >, garantizando <strong
+              >eficiencia, confiabilidad y rendimiento óptimo</strong
+            > en cada proyecto.
+          </p>
+          <p>
+            Contamos con un <strong>equipo técnico altamente capacitado</strong>
+            y con más de
+            <strong>10 años de experiencia</strong> en la gestión de sistemas de
+            aire acondicionado. Nuestra labor se apoya en <strong
+              >herramientas y tecnologías especializadas</strong
+            > que nos permiten realizar tareas clave como:
+          </p>
 
-	<Section>
-		<Container>
-			<Heading>
-				<h2 slot="heading-title">Our Mission</h2>
-				<p slot="heading-content">
-					At HyperDrive, our mission is to offer an exclusive collection of high-end vehicles that combine
-					elegance, performance, and sophistication. We strive to provide an exceptional customer experience
-					and ensure that every client drives away satisfied.
-				</p>
-			</Heading>
-		</Container>
-	</Section>
+          <ul>
+            <li>Recuperación de refrigerante de manera segura.</li>
+            <li>Deshidratación de sistemas mediante bomba de vacío.</li>
+            <li>Mediciones precisas con vacuómetro.</li>
+          </ul>
+          <p>
+            Además, empleamos <strong
+              >productos de limpieza específicos para intercambiadores de calor</strong
+            >, lo que mejora la <strong>eficiencia energética</strong>,
+            <strong>prolonga la vida útil de los equipos</strong> y
+            <strong>reduce el impacto ambiental</strong>.
+          </p>
 
-	<Section class:list={"bg-gray-50"}>
-		<Container>
-			<Heading>
-				<h2 slot="heading-title">Meet Our Team</h2>
-				<p slot="heading-content">
-					Our dedicated team of professionals is here to assist you with all your car needs. Get to know the
-					people behind HyperDrive.
-				</p>
-			</Heading>
-			<Team />
-		</Container>
-	</Section>
+          <Button href="/contact" class:list={"mt-4"}
+            >Contáctanos hoy mismo</Button
+          >
+        </div>
+        <div slot="hero-right">
+          <Image src={quienesSomosImg} alt="Quiénes Somos" />
+        </div>
+      </Hero>
+    </Container>
+  </Section>
+
+  <Section class:list={"bg-gray-50"}>
+    <Container>
+      <Heading class="mb-10">
+        <h2 slot="heading-title" class="text-center">
+          Conoce a Nuestro Equipo
+        </h2>
+        <p slot="heading-content" class="text-center">
+          Especialistas en mantenimiento, diseño y optimización de sistemas de
+          aire acondicionado, ventilación y agua helada.
+        </p>
+      </Heading>
+      <Team />
+    </Container>
+  </Section>
+
+  <Section>
+    <Container>
+      <h2 class="text-center mb-10">Clientes que confían en nosotros</h2>
+      <p class="text-center mb-10">
+        Cada instalación refleja nuestro compromiso con la eficiencia, el
+        confort y la calidad.
+      </p>
+      <SliderTestimonial />
+    </Container>
+  </Section>
 </Layout>

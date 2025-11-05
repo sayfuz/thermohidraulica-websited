@@ -13,8 +13,8 @@ import GridItem from "~/components/GridItem.astro";
 // Images
 import tecnicoAire from "~/assets/images/tecnico-aire.jpg";
 import ImageHeadingBackground from "~/assets/images/teccnico.jpg";
-import ImageOne from "~/assets/images/pexels-leif-bergerson-99376750-9764731.webp";
-import ImageTwo from "~/assets/images/pexels-zenzazione-2922140.webp";
+import ImageOne from "~/assets/images/servicio-1.jpg";
+import ImageTwo from "~/assets/images/servicio-2.jpg";
 ---
 
 <Layout pageTitle="Home">
@@ -28,11 +28,14 @@ import ImageTwo from "~/assets/images/pexels-zenzazione-2922140.webp";
     <div class="absolute inset-0 w-full h-full object-cover bg-gray-800/80">
     </div>
     <Container class:list={"relative z-10"}>
-      <Heading class:list={"prose-invert max-w-4xl"}>
-        <h1 slot="heading-title" class="mb-0 lg:text-7xl text-balance">
+      <Heading class:list={"prose-invert max-w-4xl lg:py-30"}>
+        <h1
+          slot="heading-title"
+          class="mb-0 lg:text-7xl text-balance text-center"
+        >
           Eficiencia, confort y tecnología en cada sistema de climatización
         </h1>
-        <p slot="heading-content">
+        <p slot="heading-content" class="text-center">
           Especialistas en mantenimiento, diseño y optimización de sistemas de
           aire acondicionado, ventilación y agua helada.
         </p>
@@ -44,12 +47,14 @@ import ImageTwo from "~/assets/images/pexels-zenzazione-2922140.webp";
   <Section>
     <Container>
       <Hero>
-        <div slot="hero-left" class="prose lg:max-w-2xl">
+        <div slot="hero-left" class="prose">
           <h2>
-            Climatizamos espacios con soluciones responsables y de alto
-            rendimiento
+            Soluciones integrales para sistemas de climatización eficientes
           </h2>
-          <p>Tu bienestar y el del planeta, en equilibrio perfecto.</p>
+          <p>
+            Nuestro enfoque se centra en la eficiencia energética y el confort,
+            garantizando un ambiente óptimo para cada espacio.
+          </p>
 
           <Button href="/contact" class:list={"mt-4"}
             >Contáctanos hoy mismo</Button
@@ -69,52 +74,46 @@ import ImageTwo from "~/assets/images/pexels-zenzazione-2922140.webp";
         <GridItem
           image={ImageOne}
           imageAlt="Car dealer"
-          span={2}
-          link="/cars"
+          span={1}
+          link="/servicios"
           As="a"
           xl
         >
-          <h2>Featured cars</h2>
+          <h2>Mantenimiento preventivo y correctivo</h2>
           <p>
-            Discover the ultimate driving experience with our exclusive
-            collection of featured cars. Whether you're looking for a sleek
-            sports car, a reliable family vehicle, or an eco-friendly hybrid, we
-            have something for everyone. Our extensive inventory is carefully
-            curated to ensure that you find the perfect match for your lifestyle
-            and budget.
+            Nuestro servicio de mantenimiento preventivo y correctivo está
+            diseñado para garantizar el óptimo funcionamiento de su sistema de
+            climatización. Realizamos revisiones periódicas y ajustes necesarios
+            para evitar fallos y prolongar la vida útil de su equipo.
           </p>
           <Button
             As="button"
             type="button"
             color="white-outline"
-            class:list={"mt-4 group-hover:bg-white/10"}>View all cars</Button
+            class:list={"mt-4 group-hover:bg-white/10"}>Servicios</Button
           >
         </GridItem>
 
-        <GridItem image={ImageTwo} imageAlt="Car dealer" link="/cars" As="a">
-          <h3>Featured cars</h3>
+        <GridItem
+          image={ImageTwo}
+          imageAlt="Car dealer"
+          link="/servicios"
+          As="a"
+        >
+          <h2>Diseño e instalación de sistemas de climatización</h2>
           <p>
-            Discover the ultimate driving experience with our exclusive
-            collection of featured cars. Whether you're looking for a sleek
-            sports car, a reliable family vehicle, or an eco-friendly hybrid, we
-            have something for everyone.
+            Nuestro servicio de diseño e instalación de sistemas de
+            climatización se adapta a las necesidades específicas de cada
+            cliente. Contamos con un equipo de expertos que garantiza una
+            instalación eficiente y de alta calidad, utilizando tecnología de
+            vanguardia para maximizar el confort y la eficiencia energética.
           </p>
           <Button
             As="button"
             type="button"
             color="white-outline"
-            class:list={"mt-4 group-hover:bg-white/10"}>View all cars</Button
+            class:list={"mt-4 group-hover:bg-white/10"}>Servicios</Button
           >
-        </GridItem>
-
-        <GridItem>
-          <h3>Featured cars</h3>
-          <p>
-            Discover the ultimate driving experience with our exclusive
-            collection of featured cars. Whether you're looking for a sleek
-            sports car, a reliable family vehicle, or an eco-friendly hybrid, we
-            have something for everyone.
-          </p>
         </GridItem>
       </Grid>
     </Container>
@@ -124,17 +123,20 @@ import ImageTwo from "~/assets/images/pexels-zenzazione-2922140.webp";
   <Section class:list={"bg-gradient-to-br from-gray-900 to-gray-700"}>
     <Container>
       <Heading class:list={"mb-0 lg:mb-0 prose-invert text-center mx-auto"}>
-        <h2 slot="heading-title">Can't find the ideal car?</h2>
+        <h2 slot="heading-title">
+          ¿Te interesa mejorar la eficiencia de tu sistema de climatización?
+        </h2>
 
         <p slot="heading-content">
-          Our team is here to help you find the perfect car that suits your
-          needs and budget. Whether you're looking for a sleek sports car, a
-          reliable family vehicle, or an eco-friendly hybrid, we have something
-          for everyone.
+          Nuestro equipo está aquí para ayudarte a encontrar la solución
+          perfecta que se adapte a tus necesidades y presupuesto. Ya sea que
+          busques un sistema de climatización eficiente, un servicio de
+          mantenimiento confiable o una instalación de alta calidad, tenemos
+          algo para ti. for everyone.
         </p>
 
-        <Button href="/contact" color="white" class:list={"mt-8"}
-          >Contact us</Button
+        <Button href="/contact" color="blue" class:list={"mt-8"}
+          >Contactanos</Button
         >
       </Heading>
     </Container>

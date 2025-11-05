@@ -1,62 +1,62 @@
 [
-	{
-		"id": 1,
-		"author": "John Doe",
-		"title": "Great service",
-		"location": "New York",
-		"description": "I had a great experience with HyperDrive. They were very professional and helped me to find the perfect car.",
-		"img": "~/assets/images/avatar-empty.webp",
-		"starRating": 5,
-		"hidden": false
-	},
-	{
-		"id": 2,
-		"author": "Jane Doe",
-		"title": "Excellent service",
-		"location": "Los Angeles",
-		"description": "I had a great experience with HyperDrive. They were very professional and helped me to find the perfect car.",
-		"img": "~/assets/images/avatar-empty.webp",
-		"starRating": 4.5,
-		"hidden": false
-	},
-	{
-		"id": 3,
-		"author": "John Smith",
-		"title": "Great service",
-		"location": "Chicago",
-		"description": "I had a great experience with HyperDrive. They were very professional and helped me to find the perfect car.",
-		"img": "~/assets/images/avatar-empty.webp",
-		"starRating": 4,
-		"hidden": false
-	},
-	{
-		"id": 4,
-		"author": "Jane Smith",
-		"title": "Excellent service",
-		"location": "Houston",
-		"description": "I had a great experience with HyperDrive. They were very professional and helped me to find the perfect car.",
-		"img": "~/assets/images/avatar-empty.webp",
-		"starRating": 4.8,
-		"hidden": false
-	},
-	{
-		"id": 5,
-		"author": "Alice Johnson",
-		"title": "Fantastic experience",
-		"location": "San Francisco",
-		"description": "HyperDrive exceeded my expectations. The staff was friendly and the process was smooth.",
-		"img": "~/assets/images/avatar-empty.webp",
-		"starRating": 5,
-		"hidden": false
-	},
-	{
-		"id": 6,
-		"author": "Bob Brown",
-		"title": "Very satisfied",
-		"location": "Miami",
-		"description": "I am very satisfied with the service provided by HyperDrive. They were efficient and helpful.",
-		"img": "~/assets/images/avatar-empty.webp",
-		"starRating": 4.7,
-		"hidden": false
-	}
+  {
+    "id": 1,
+    "author": "Carlos Méndez",
+    "title": "Servicio impecable",
+    "location": "Medellín",
+    "description": "Contratamos a la empresa para el mantenimiento de nuestros sistemas de aire acondicionado industrial y quedamos encantados. Puntuales, profesionales y muy detallistas.",
+    "img": "~/assets/images/avatar-empty.webp",
+    "starRating": 5,
+    "hidden": false
+  },
+  {
+    "id": 2,
+    "author": "Laura Fernández",
+    "title": "Excelente atención y resultados",
+    "location": "Medellín",
+    "description": "El equipo revisó todo nuestro sistema HVAC y mejoraron notablemente la eficiencia energética. Muy buena comunicación y asesoramiento.",
+    "img": "~/assets/images/avatar-empty.webp",
+    "starRating": 4.8,
+    "hidden": false
+  },
+  {
+    "id": 3,
+    "author": "Miguel Torres",
+    "title": "Profesionales y confiables",
+    "location": "Medellín",
+    "description": "Nos diseñaron e instalaron un sistema de climatización por conductos en nuestras oficinas. Todo quedó perfecto y funcionando sin problemas.",
+    "img": "~/assets/images/avatar-empty.webp",
+    "starRating": 4.9,
+    "hidden": false
+  },
+  {
+    "id": 4,
+    "author": "Elena Rodríguez",
+    "title": "Gran experiencia",
+    "location": "Medellín",
+    "description": "Excelente trabajo en la optimización del sistema de agua helada. El rendimiento mejoró y el consumo bajó. Repetiríamos sin dudarlo.",
+    "img": "~/assets/images/avatar-empty.webp",
+    "starRating": 5,
+    "hidden": false
+  },
+  {
+    "id": 5,
+    "author": "José Luis Navarro",
+    "title": "Mantenimiento eficiente",
+    "location": "Medellín",
+    "description": "Realizaron el mantenimiento preventivo en nuestras unidades HVAC y dejaron todo en condiciones óptimas. Muy recomendables.",
+    "img": "~/assets/images/avatar-empty.webp",
+    "starRating": 4.7,
+    "hidden": false
+  },
+  {
+    "id": 6,
+    "author": "María Gómez",
+    "title": "Excelente servicio técnico",
+    "location": "Medellín",
+    "description": "Tuvimos una avería en el sistema de ventilación y acudieron rápidamente. Solución efectiva y trato cercano.",
+    "img": "~/assets/images/avatar-empty.webp",
+    "starRating": 4.9,
+    "hidden": false
+  }
 ]

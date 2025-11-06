@@ -16,16 +16,35 @@ export const menuMain: MainMenuItem[] = [
     label: "Servicios",
     url: "/servicios",
     submenu: [
-      { id: "repairs", label: "Reparaciones", url: "/servicios/repairs" },
       {
-        id: "maintenance",
+        id: "mantenimiento",
         label: "Mantenimiento",
-        url: "/servicios/maintenance",
+        url: "/servicios/mantenimiento",
       },
       {
-        id: "car-sales",
-        label: "Ventas de Autos",
-        url: "/servicios/car-sales",
+        id: "diseno-e-instalacion",
+        label: "Diseño e instalación",
+        url: "/servicios/diseno-e-instalacion",
+      },
+      {
+        id: "sistema-agua-helada",
+        label: "Sistema de agua helada",
+        url: "/servicios/sistema-agua-helada",
+      },
+      {
+        id: "soluciones-industriales-confort",
+        label: "Soluciones para procesos industriales o de confort",
+        url: "/servicios/soluciones-industriales-confort",
+      },
+      {
+        id: "mediciones-equipos-hvac",
+        label: "Mediciones energéticas de equipos HVAC",
+        url: "/servicios/mediciones-equipos-hvac",
+      },
+      {
+        id: "rutinas-mantenimiento-preventivo",
+        label: "Rutinas de mantenimiento preventivo",
+        url: "/servicios/rutinas-mantenimiento-preventivo",
       },
     ],
   },

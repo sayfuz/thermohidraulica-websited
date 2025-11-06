@@ -1,0 +1,64 @@
+---
+import Layout from "~/layouts/Layout.astro";
+import Section from "~/components/Section.astro";
+import Container from "~/components/Container.astro";
+import FAQ from "~/components/Faq.astro";
+import Hero from "~/components/Hero.astro";
+import Button from "~/components/Button.astro";
+import { Image } from "astro:assets";
+
+// Images
+import tecnicoAire from "~/assets/images/tecnico-aire.jpg";
+
+const faqItems = [
+  {
+    question: "¿Qué incluye el servicio de mantenimiento?",
+    answer:
+      "Incluye limpieza de filtros y serpentines, revisión de compresores y ventiladores, medición de presiones y temperaturas, verificación de fugas, revisión eléctrica, calibración de termostatos y evaluación general del sistema.",
+  },
+  {
+    question: "¿Qué tan seguido debería hacer el mantenimiento?",
+    answer:
+      "Se recomienda realizarlo al menos dos veces al año: antes de la temporada de verano y antes del invierno. En entornos industriales o de alta demanda, la frecuencia puede ser mensual o trimestral.",
+  },
+  {
+    question: "¿Ofrecen paquetes de mantenimiento?",
+    answer:
+      "Sí, ofrecemos paquetes personalizados con visitas programadas, reportes técnicos detallados y atención prioritaria. Los planes se adaptan al tamaño, tipo y uso del sistema.",
+  },
+];
+---
+
+<Layout pageTitle="Mantenimiento | Thermohidráulica" title="Mantenimiento">
+  <Section>
+    <Container>
+      <Hero>
+        <div slot="hero-left">
+          <h1>Mantenimiento preventivo y correctivo</h1>
+          <p>
+            Nuestro servicio de mantenimiento preventivo y correctivo está
+            diseñado para asegurar la máxima eficiencia, durabilidad y
+            fiabilidad de tus sistemas HVAC. Realizamos inspecciones detalladas,
+            limpieza de componentes, calibración de equipos y detección temprana
+            de fallos. Con un enfoque en la prevención, reducimos el riesgo de
+            averías imprevistas y garantizamos el confort continuo de tus
+            instalaciones.
+          </p>
+
+          <Button href="/contacto" class:list={"mt-4"}
+            >Contáctanos hoy mismo</Button
+          >
+        </div>
+        <div slot="hero-right">
+          <Image src={tecnicoAire} alt="Car dealer" />
+        </div>
+      </Hero>
+    </Container>
+  </Section>
+
+  <Section class:list={"bg-white"}>
+    <Container>
+      <FAQ items={faqItems} />
+    </Container>
+  </Section>
+</Layout>

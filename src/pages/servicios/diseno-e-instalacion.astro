@@ -1,0 +1,65 @@
+---
+import Layout from "~/layouts/Layout.astro";
+import Section from "~/components/Section.astro";
+import Container from "~/components/Container.astro";
+import FAQ from "~/components/Faq.astro";
+import Hero from "~/components/Hero.astro";
+import Button from "~/components/Button.astro";
+import { Image } from "astro:assets";
+
+// Images
+import tecnicoAire from "~/assets/images/tecnico-aire.jpg";
+
+const faqItems = [
+  {
+    question: "¿Qué incluye el servicio de diseño e instalación?",
+    answer:
+      "Incluye análisis técnico del espacio, selección del equipo adecuado, diseño de ductería o distribución, instalación completa, pruebas de rendimiento y puesta en marcha final.",
+  },
+  {
+    question: "¿Cuánto tarda el proceso de instalación?",
+    answer:
+      "Depende de la complejidad del proyecto. Para instalaciones residenciales o de oficinas pequeñas puede tardar entre 3 y 7 días; proyectos industriales o de gran escala pueden requerir varias semanas.",
+  },
+  {
+    question: "¿Ofrecen garantía o soporte post-instalación?",
+    answer:
+      "Sí, todas nuestras instalaciones incluyen garantía por componentes y mano de obra, además de servicio postventa para mantenimiento y ajustes de calibración.",
+  },
+];
+---
+
+<Layout
+  pageTitle="Diseño e instalación de sistemas de climatización | Thermohidráulica"
+  title="Diseño e instalación de sistemas de climatización"
+>
+  <Section>
+    <Container>
+      <Hero>
+        <div slot="hero-left">
+          <h1>Diseño e instalación de sistemas de climatización</h1>
+          <p>
+            Diseñamos e instalamos sistemas HVAC adaptados a cada espacio,
+            combinando ingeniería, innovación y eficiencia energética. Nuestro
+            equipo se encarga de todo el proceso: desde el cálculo de carga
+            térmica hasta la puesta en marcha del sistema, asegurando un
+            funcionamiento óptimo y un ambiente confortable en todo momento.
+          </p>
+
+          <Button href="/contacto" class:list={"mt-4"}
+            >Contáctanos hoy mismo</Button
+          >
+        </div>
+        <div slot="hero-right">
+          <Image src={tecnicoAire} alt="Car dealer" />
+        </div>
+      </Hero>
+    </Container>
+  </Section>
+
+  <Section class:list={"bg-white"}>
+    <Container>
+      <FAQ items={faqItems} />
+    </Container>
+  </Section>
+</Layout>

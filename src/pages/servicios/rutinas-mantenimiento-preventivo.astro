@@ -1,0 +1,64 @@
+---
+import Layout from "~/layouts/Layout.astro";
+import Section from "~/components/Section.astro";
+import Container from "~/components/Container.astro";
+import FAQ from "~/components/Faq.astro";
+import Hero from "~/components/Hero.astro";
+import Button from "~/components/Button.astro";
+import { Image } from "astro:assets";
+
+// Images
+import tecnicoAire from "~/assets/images/tecnico-aire.jpg";
+
+const faqItems = [
+  {
+    question: "¿Qué incluye una rutina preventiva?",
+    answer:
+      "Incluye limpieza, lubricación, calibración, revisión eléctrica, registro de datos de operación y reporte técnico del estado de los equipos.",
+  },
+  {
+    question: "¿Con qué periodicidad se recomienda?",
+    answer:
+      "Varía según el tipo de instalación, aunque lo ideal es una rutina mensual o bimestral en equipos de uso continuo.",
+  },
+  {
+    question: "¿Se pueden programar visitas automáticas?",
+    answer:
+      "Sí, ofrecemos contratos con calendario de visitas, alertas automáticas y seguimiento digital de cada mantenimiento realizado.",
+  },
+];
+---
+
+<Layout
+  pageTitle="Rutinas de mantenimiento preventivo | Thermohidráulica"
+  title="Rutinas de mantenimiento preventivo"
+>
+  <Section>
+    <Container>
+      <Hero>
+        <div slot="hero-left">
+          <h1>Rutinas de mantenimiento preventivo</h1>
+          <p>
+            Implementamos planes de mantenimiento preventivo orientados a la
+            durabilidad y eficiencia de los sistemas HVAC. Diseñamos rutinas
+            adaptadas a cada instalación, minimizando paradas imprevistas y
+            prolongando la vida útil de los equipos.
+          </p>
+
+          <Button href="/contacto" class:list={"mt-4"}
+            >Contáctanos hoy mismo</Button
+          >
+        </div>
+        <div slot="hero-right">
+          <Image src={tecnicoAire} alt="Car dealer" />
+        </div>
+      </Hero>
+    </Container>
+  </Section>
+
+  <Section class:list={"bg-white"}>
+    <Container>
+      <FAQ items={faqItems} />
+    </Container>
+  </Section>
+</Layout>

@@ -1,0 +1,64 @@
+---
+import Layout from "~/layouts/Layout.astro";
+import Section from "~/components/Section.astro";
+import Container from "~/components/Container.astro";
+import FAQ from "~/components/Faq.astro";
+import Hero from "~/components/Hero.astro";
+import Button from "~/components/Button.astro";
+import { Image } from "astro:assets";
+
+// Images
+import tecnicoAire from "~/assets/images/tecnico-aire.jpg";
+
+const faqItems = [
+  {
+    question: "¿Qué se evalúa durante la medición energética?",
+    answer:
+      "Se analizan consumos eléctricos, caudales de aire, presiones, temperaturas y rendimiento térmico de cada componente del sistema.",
+  },
+  {
+    question: "¿Con qué frecuencia deben realizarse las mediciones?",
+    answer:
+      "Al menos una vez al año o tras modificaciones importantes en el sistema. En instalaciones industriales, puede ser trimestral.",
+  },
+  {
+    question: "¿Incluyen recomendaciones de mejora?",
+    answer:
+      "Sí, entregamos un informe técnico con sugerencias de ajustes, reemplazos o mejoras para optimizar el consumo energético.",
+  },
+];
+---
+
+<Layout
+  pageTitle="Mediciones energéticas de equipos HVAC | Thermohidráulica"
+  title="Mediciones energéticas de equipos HVAC"
+>
+  <Section>
+    <Container>
+      <Hero>
+        <div slot="hero-left">
+          <h1>Mediciones energéticas de equipos HVAC</h1>
+          <p>
+            Realizamos mediciones energéticas precisas para diagnosticar el
+            rendimiento de tus equipos HVAC. Identificamos pérdidas de
+            eficiencia y oportunidades de ahorro mediante instrumentos
+            calibrados y análisis técnico detallado.
+          </p>
+
+          <Button href="/contacto" class:list={"mt-4"}
+            >Contáctanos hoy mismo</Button
+          >
+        </div>
+        <div slot="hero-right">
+          <Image src={tecnicoAire} alt="Car dealer" />
+        </div>
+      </Hero>
+    </Container>
+  </Section>
+
+  <Section class:list={"bg-white"}>
+    <Container>
+      <FAQ items={faqItems} />
+    </Container>
+  </Section>
+</Layout>

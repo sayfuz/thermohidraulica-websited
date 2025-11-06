@@ -1,0 +1,66 @@
+---
+import Layout from "~/layouts/Layout.astro";
+import Section from "~/components/Section.astro";
+import Container from "~/components/Container.astro";
+import FAQ from "~/components/Faq.astro";
+import Hero from "~/components/Hero.astro";
+import Button from "~/components/Button.astro";
+import { Image } from "astro:assets";
+
+// Images
+import tecnicoAire from "~/assets/images/tecnico-aire.jpg";
+
+const faqItems = [
+  {
+    question:
+      "¿Qué incluye el servicio de revisión y mantenimiento de chillers?",
+    answer:
+      "Incluye limpieza de intercambiadores, revisión de bombas, análisis de glicoles, calibración de controles electrónicos, y pruebas de rendimiento térmico y eléctrico.",
+  },
+  {
+    question: "¿Cada cuánto se recomienda el mantenimiento?",
+    answer:
+      "Idealmente, una revisión trimestral, con mantenimientos mayores semestrales. La frecuencia puede variar según las horas de operación y las condiciones del entorno.",
+  },
+  {
+    question: "¿Ofrecen modernización o retrofit de equipos antiguos?",
+    answer:
+      "Sí, ofrecemos soluciones de actualización de chillers antiguos con tecnología de bajo consumo y control inteligente, sin necesidad de reemplazar todo el sistema.",
+  },
+];
+---
+
+<Layout
+  pageTitle="Sistemas de agua helada | Thermohidráulica"
+  title="Sistemas de agua helada"
+>
+  <Section>
+    <Container>
+      <Hero>
+        <div slot="hero-left">
+          <h1>Sistemas de agua helada (Chillers)</h1>
+          <p>
+            Somos especialistas en el mantenimiento, revisión y optimización de
+            sistemas de agua helada (chillers), esenciales para procesos
+            industriales y climatización de grandes espacios. Garantizamos que
+            tu sistema opere con la máxima eficiencia energética y mínima
+            interrupción operativa.
+          </p>
+
+          <Button href="/contacto" class:list={"mt-4"}
+            >Contáctanos hoy mismo</Button
+          >
+        </div>
+        <div slot="hero-right">
+          <Image src={tecnicoAire} alt="Car dealer" />
+        </div>
+      </Hero>
+    </Container>
+  </Section>
+
+  <Section class:list={"bg-white"}>
+    <Container>
+      <FAQ items={faqItems} />
+    </Container>
+  </Section>
+</Layout>

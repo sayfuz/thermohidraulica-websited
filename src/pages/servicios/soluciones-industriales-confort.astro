@@ -1,0 +1,65 @@
+---
+import Layout from "~/layouts/Layout.astro";
+import Section from "~/components/Section.astro";
+import Container from "~/components/Container.astro";
+import FAQ from "~/components/Faq.astro";
+import Hero from "~/components/Hero.astro";
+import Button from "~/components/Button.astro";
+import { Image } from "astro:assets";
+
+// Images
+import tecnicoAire from "~/assets/images/tecnico-aire.jpg";
+
+const faqItems = [
+  {
+    question: "¿Qué tipos de procesos atienden?",
+    answer:
+      "Atendemos procesos de manufactura, farmacéuticos, alimentarios, tecnológicos y de climatización de confort para oficinas, hoteles y hospitales.",
+  },
+  {
+    question: "¿Diseñan sistemas personalizados?",
+    answer:
+      "Sí, cada sistema se diseña según las necesidades del proceso, el volumen del espacio y las condiciones climáticas locales.",
+  },
+  {
+    question: "¿Pueden integrar sistemas de automatización industrial?",
+    answer:
+      "Por supuesto, implementamos sistemas con monitoreo remoto, control por zonas y reportes energéticos en tiempo real.",
+  },
+];
+---
+
+<Layout
+  pageTitle="Soluciones para procesos industriales o de confort | Thermohidráulica"
+  title="Sistemas de agua helada"
+>
+  <Section>
+    <Container>
+      <Hero>
+        <div slot="hero-left">
+          <h1>Soluciones para procesos industriales o de confort</h1>
+          <p>
+            Desarrollamos soluciones de climatización adaptadas a procesos
+            productivos, laboratorios, salas limpias o espacios de alta
+            exigencia ambiental. Cada proyecto combina control de temperatura,
+            humedad y ventilación para asegurar condiciones estables y cumplir
+            con normativas específicas.
+          </p>
+
+          <Button href="/contacto" class:list={"mt-4"}
+            >Contáctanos hoy mismo</Button
+          >
+        </div>
+        <div slot="hero-right">
+          <Image src={tecnicoAire} alt="Car dealer" />
+        </div>
+      </Hero>
+    </Container>
+  </Section>
+
+  <Section class:list={"bg-white"}>
+    <Container>
+      <FAQ items={faqItems} />
+    </Container>
+  </Section>
+</Layout>
